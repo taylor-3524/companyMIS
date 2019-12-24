@@ -12,23 +12,19 @@
 </head>
 <body>
 <input type="button" value="新增人员信息" onclick="add()">
-<input type="button" value="查找人员信息" onclick="sel()">
-<input type="button" value="修改人员信息" onclick="upd()">
+<input type="button" value="查找/修改人员信息" onclick="sel()">
+
 </body>
 <script>
     function add() {
-        window.location.href="../staff/add"
+        window.location.href="../staffAdd/index"
     }
 </script>
 <script>
     function sel() {
-        window.location.href="../staff/sel"
+        window.location.href="../staffSU/index"
     }
 </script>
-<script>
-    function upd() {
-        window.location.href="../staff/upd"
-    }
-</script>
+
 
 </html>
