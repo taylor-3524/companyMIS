@@ -32,9 +32,11 @@ public class LoginController {
      */
     @RequestMapping("/login")
     public String login(User user, HttpSession session){
-        loginService.checkuser(user, session);
+        if(loginService.checkuser(user, session)){
             //密码正确
             return "index/index";
+        }
+        return "login/error";
     }
 
 

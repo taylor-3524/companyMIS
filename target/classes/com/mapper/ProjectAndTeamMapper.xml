@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.ProjectAndTeamMapper">
+    <select id="getProjectAndTeam" resultType="com.dto.projectAndTeam">
+        select project.name pname,project.number pnumber,project.status status,project.remark remark,team.name tname,team.number tnumber,team.ofPorject ofPorject from project,team
+        where team.ofPorject=project.number and project.status!="正在开发"
+    </select>
+    <select id="selByName" parameterType="String" resultType="com.dto.projectAndTeam">
+        select project.name pname,project.number pnumber,project.status,project.remark,team.name tname,team.number tnumber
+        from project,team
+        where project.number=team.ofPorject
+        <if test="_parameter!=null">
+            and  project.name LIKE CONCAT('%', #{name}, '%')
+        </if>
+    </select>
+</mapper>

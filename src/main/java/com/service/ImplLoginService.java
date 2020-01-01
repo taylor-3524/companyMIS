@@ -6,5 +6,5 @@ import com.entity.User;
 import javax.servlet.http.HttpSession;
 
 public interface ImplLoginService {
-    public void checkuser(User user, HttpSession session);
+    public boolean checkuser(User user, HttpSession session);
 }

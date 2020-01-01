@@ -13,22 +13,17 @@
 <body>
 <input type="button" value="新增项目信息" onclick="add()">
 <input type="button" value="查找项目信息" onclick="sel()">
-<input type="button" value="修改项目信息" onclick="upd()">
 </body>
 <script>
     function add() {
-        window.location.href="../project/add"
+        window.location.href="../projectAdd/index"
     }
 </script>
 <script>
     function sel() {
-        window.location.href="../project/sel"
+        window.location.href="../project/index"
     }
 </script>
-<script>
-    function upd() {
-        window.location.href="../project/upd"
-    }
-</script>
+
 
 </html>

@@ -42,7 +42,9 @@
         </javaClientGenerator>
 
         <!-- 指定数据表 -->
-        <table schema="" tableName="user"></table>
+        <table schema="" tableName="staff"></table>
+        <table schema="" tableName="team"></table>
+        <table schema="" tableName="project"></table>
 
 
 

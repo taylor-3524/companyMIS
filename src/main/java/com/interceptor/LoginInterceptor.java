@@ -34,7 +34,7 @@ public class LoginInterceptor implements HandlerInterceptor {
                 return true;
             }
         }
-        httpServletResponse.sendRedirect("../login/index");
+        httpServletResponse.sendRedirect("/companyMIS_war_exploded/login/index");
 
         return false;
     }
