@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.dao.TASMapper">
-    <select id="getTAndS" resultType="com.dto.TeamAndStaff">
-select staff.number snumber,staff.name sname,staff.ofTeam ofteam,team.name tname,team.number tnumber from staff,team
-where ofTeam=team.number and staff.tenure !="离职"
-    </select>
-
-</mapper>

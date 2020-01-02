@@ -12,6 +12,19 @@
     <title>修改员工信息</title>
 </head>
 <link type="text/css" rel="stylesheet" href="../css/leader.css"/>
+<style>
+    div{
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 600px;
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
 <body>
 <ul>
     <li><a class="active" href="../index/index">主页</a></li>
@@ -20,6 +33,7 @@
     <li><a href="../projectAdd/index">项目信息管理</a></li>
 </ul>
 <br>
+<div>
 <table>
     <tr>
         <th>姓名</th>
@@ -55,6 +69,7 @@
         </form>
 
 </table>
+</div>
 </body>
 <script>
     function submit_tip() {

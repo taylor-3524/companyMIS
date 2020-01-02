@@ -12,6 +12,19 @@
 <head>
     <title>查找/修改项目信息</title>
 </head>
+<style>
+    div{
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 900px;
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
 <link type="text/css" rel="stylesheet" href="../css/leader.css"/>
 <body>
 <ul>
@@ -22,13 +35,16 @@
 
 </ul>
 <br>
+<div>
+
+
 <label>根据项目名称查询</label>
 <form action="selByName1" method="post">
     <input type="text" placeholder="请输入员工姓名或部分姓名" name="name" id="name">
     <input type="submit" value="查询">
 </form>
 
-<div >
+
     <table class="staff_inf">
         <tr id="t_head">
             <th>项目名称</th>
@@ -43,9 +59,9 @@
                 <td>${list.pname}</td>
                 <td>${list.pnumber}</td>
                 <td>${list.status}</td>
-                <th>${list.remark}</th>
-                <th>${list.tname}</th>
-                <th><input value="修改" type="button" onclick="update(${list.pnumber})"></th>
+                <td>${list.remark}</td>
+                <td>${list.tname}</td>
+                <td><input value="修改" type="button" onclick="update(${list.pnumber})"></td>
             </tr>
         </c:forEach>
     </table>

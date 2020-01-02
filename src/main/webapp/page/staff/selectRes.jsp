@@ -12,6 +12,19 @@
 <head>
     <title>查找/修改员工信息</title>
 </head>
+<style>
+    div{
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 450px;
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
 <link type="text/css" rel="stylesheet" href="../css/leader.css"/>
 <body>
 <ul>
@@ -21,6 +34,7 @@
     <li><a href="../projectAdd/index">项目信息管理</a></li>
 </ul>
 <br>
+<div>
 <label>根据姓名查询</label>
 <form action="selectByName" method="post">
     <input type="text" placeholder="请输入员工姓名或部分姓名" name="name" id="name">
@@ -37,7 +51,7 @@
     <input type="submit" value="查询">
 </form>
 
-<div >
+
     <table class="staff_inf">
         <tr id="t_head">
             <th>员工姓名</th>

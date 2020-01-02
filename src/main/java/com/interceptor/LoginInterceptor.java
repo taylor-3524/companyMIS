@@ -24,6 +24,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         if (nowUrl.equals("/companyMIS_war_exploded/")
                 || nowUrl.equals("/companyMIS_war_exploded/login/index")
                 || nowUrl.equals("/companyMIS_war_exploded/login/login")
+                || nowUrl.equals("/companyMIS_war_exploded/css/typecho.css")
         ) {
             //放行登录页面
             return true;
